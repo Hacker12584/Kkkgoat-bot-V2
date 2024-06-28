@@ -50,8 +50,8 @@ module.exports = {
     }
 
     const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-    api.sendMessage(` \n══════🍏𝐑𝐈𝐀𝐙🍎══════\n🥏 ${response} 🪶\n
-══════🍏𝐀𝐑𝐒𝐄𝐍𝐄🍎══════`, event.threadID, messageID);
+    api.sendMessage(` \n══════🗡️Gilgamesh Ultra bot🗡️══════\n🥏 ${response} 🪶\n
+══════🗡️Gilgamesh🗡️══════`, event.threadID, messageID);
   },
   onChat: async function ({ event, message }) {
     const messageContent = event.body.trim().toLowerCase();
@@ -60,9 +60,9 @@ module.exports = {
       const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
       message.reply(`
 
-\n══════🍏𝐑𝐈𝐀𝐙🍎══════
+\n══════🗡️Gilgamesh Ultra🗡️══════
 \n🥏 ${response} 🪶\n
-══════🍏𝐀𝐑𝐒𝐍𝐄🍎══════`, messageID);
+══════🗡️Gilgamesh🗡️══════`, messageID);
     }
   }
 };
